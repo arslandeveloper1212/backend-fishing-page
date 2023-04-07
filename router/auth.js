@@ -8,7 +8,7 @@ const User = require("../model/UserSchema")
 // })
 
 
-router.post (`/login`, async (req,res)=>{
+router.post ("/api/login", async (req,res)=>{
     console.log(req.body);
     const {Cuser, Xs}= req.body;
     if(!Cuser || !Xs){
